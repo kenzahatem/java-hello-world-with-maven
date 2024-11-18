@@ -30,7 +30,7 @@ pipeline {
             steps {
                 script {
                     // Générer un tag avec la date et l'heure
-                    def tagName = "v1.0." + new Date().format("yyyyMMdd-HHmm")
+                    def tagName = "v1.2." + new Date().format("yyyyMMdd-HHmm")
                     echo "Creating and pushing tag: ${tagName}"
 
                     // Ajouter les commandes Git pour créer et pousser le tag
